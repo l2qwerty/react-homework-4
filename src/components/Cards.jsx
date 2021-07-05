@@ -1,11 +1,11 @@
 import React from 'react';
-import Products from './Products';
+import { products } from './products';
 import ProductCard from './ProductCard';
 
 function Cards() {
   return (
     <div>
-      {Products().map((item) => (
+      {products.map((item) => (
         <div key={item.id}>
           <ProductCard
             image={item.image}
